@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <script type="text/javascript" src="__settings__.js"></script>
+    <script type="text/javascript" src="bootloader.js"></script>
+    <script type="text/javascript">
+        ack.client.load(['widget.css', 'background.js', 'audio.js', "styles.js", 'jquery-2.0.0.min.js', 'widget.js'], function() { ack.widget.init(); });
+    </script>
+</head>
+<body>
+	<div id="ack-widget">
+		<div id="scoring">
+			<div class="travelled">
+				<span class="ack-lang">Travelled</span> : <span class="value">0</span>
+			</div>
+			<div class="prize">
+				<span class="ack-lang">Score</span> : <span class="value">0</span>
+			</div>
+		</div>
+		<div id="ack-widget-inner">
+			<div id="board">
+				<canvas id="path"></canvas>
+				<canvas id="maze"></canvas>
+				<div id="prizes"></div>
+				<img id="maze-end" />
+				<img id="player" />
+				<div id="interaction"></div>
+			</div>
+		</div>
+		<div id="win"></div>
+	</div>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <script type="text/javascript" src="__settings__.js"></script>
+    <script type="text/javascript" src="bootloader.js"></script>
+    <script type="text/javascript">
+        ack.client.load([
+        	'widget.css',
+
+            'audio.js',
+        	'background.js',
+        	'styles.js',
+
+        	'jquery-2.0.0.min.js',
+        	'jquery-ui-1.10.3.custom.min.js',
+        	'jquery.ui.touch-punch.min.js',
+
+        	'widget.js'
+        ], function() { ack.widget.init(); });
+    </script>
+</head>
+<body>
+	<div id="ack-widget">
+		<div id="board"></div>
+		<div id="hud">
+			<div class="time"></div>
+			<div class="score"></div>
+		</div>
+	</div>
+</body>
+</html>

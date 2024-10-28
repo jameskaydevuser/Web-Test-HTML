@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Interactive Widgets</title>
+    <style>
+        body {
+            background-color: rgb(75, 75, 238);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+
+        .icon {
+            width: 100px;
+            height: 100px;
+            cursor: pointer;
+            object-fit: cover;
+            transition: transform 0.3s;
+        }
+
+        .icon:hover {
+            transform: scale(1.1);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <img src="assets/memory.png" alt="Memory" class="icon" onclick="openWidget('memory.wdgt')" />
+        <img src="assets/maze.png" alt="Maze" class="icon" onclick="openWidget('maze.wdgt')" />
+        <img src="assets/clicking.png" alt="Clicking Key" class="icon" onclick="openWidget('clicking_key.wdgt')" />
+        <img src="assets/colour.png" alt="Colouring" class="icon" onclick="openWidget('colouring.wdgt')" />
+        <img src="assets/drag.png" alt="Drag and Drop" class="icon" onclick="openWidget('drag n drop.wdgt')" />
+    </div>
+
+    <script>
+        function openWidget(folder) {
+            window.location.href = `${folder}/main.html`;
+        }
+    </script>
+</body>
+
+</html>

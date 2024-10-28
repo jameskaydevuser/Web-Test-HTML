@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0"><dict>
+<key>BackwardsCompatibleClassLookup</key>
+<true/>
+<key>CFBundleDevelopmentRegion</key>
+<string>English</string>
+<key>CFBundleDisplayName</key>
+<string>maze</string>
+<key>BRNotifiesOnReady</key>
+<true/>
+<key>CFBundleIdentifier</key>
+<string>com.bookry.maze.embed</string>
+<key>CFBundleName</key>
+<string>maze</string>
+<key>CFBundleShortVersionString</key>
+<string>1.0</string>
+<key>CFBundleVersion</key>
+<string>1.0</string>
+<key>KFNotifiesOnReady</key>
+<true/>
+<key>Height</key>
+<integer>768</integer>
+<key>MainHTML</key>
+<string>ibooks_container.html</string>
+<key>Width</key>
+<integer>1024</integer>
+<key>IBNotifiesOnReady</key>
+<true/>
+</dict>
+</plist>

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"/>
+
+	
+	<style>
+		body { -webkit-user-select: none; }
+		#canvas-container {
+			position: absolute;
+			right: 45px;
+			top: 0px;
+			bottom: 0px;
+			left: 0px;
+		}
+		#canvas, #canvas:active, #canvas:focus {
+			-webkit-user-select: none;
+			cursor: crosshair;
+			position: relative;
+		}
+		#canvas-foreground, #canvas-foreground img{
+			position: absolute;
+			top: 0px;
+			bottom: 0px;
+			left: 0px;
+			bottom: 0px;
+			height: 100%;
+			width: 100%;
+			-webkit-user-select: none;
+			cursor: crosshair;
+		}
+		#colors {
+			position: absolute;
+			right: 0px;
+			top: 0px;
+			bottom: 0px;
+			width: 45px;
+			padding: 10px 0px;
+			background-color: #515151;
+			moz-box-shadow: 0px 0px 5px rgba(56,56,56,0.8);
+			-webkit-box-shadow: 0px 0px 5px rgba(56, 56, 56, 0.8);
+			box-shadow: 0px 0px 5px rgba(56, 56, 56, 0.8);
+			z-index: 999;
+		}
+
+		#colors .col {
+			cursor: pointer;
+			width: 25px;
+			height: 25px;
+			border: 1px solid #dbdbdb;
+			padding: 2px;
+			margin: 0px auto 10px auto;
+			-webkit-border-radius: 3px;
+			-moz-border-radius: 3px;
+			border-radius: 3px;
+		}
+		#colors .col.active {
+			border: 3px solid #00a0ff;
+			padding: 0px;
+		}
+
+		#colors .width {
+			cursor: pointer;
+			width: 25px;
+			height: 25px;
+			padding: 5px;
+			margin: 0px auto 10px auto;
+			display: block;
+		}
+	</style>
+
+	<script type="text/javascript" src="__settings__.js"></script>
+	<script type="text/javascript" src="bootloader.js"></script>
+	<script type="text/javascript">
+		ack.client.load(['jquery.min.js', 'widget.js'], function() { ack.widget.init(); });
+	</script>
+</head>
+<body>
+	<div id="ack-widget">
+		<div id="canvas-container">
+			<canvas id="canvas" width="400" height="400"></canvas>
+			<div id="canvas-foreground"></div>
+		</div>
+		<div id="colors">
+			<img class="width" data-index="0" src="width0.png" />
+			<img class="width" data-index="1" src="width1a.png" />
+			<img class="width" data-index="2" src="width2.png" />
+			<img class="width" data-index="3" src="width3.png" />
+			<div class="col active" style="background-color:#000000;" data-color="#000000"></div>
+			<div class="col" style="background-color:#888a85;" data-color="#888a85"></div>
+			<div class="col" style="background-color:#FFFFFF;" data-color="#FFFFFF"></div>
+			<div class="col" style="background-color:#ef2929;" data-color="#ef2929"></div>
+			<div class="col" style="background-color:#e664cf;" data-color="#e664cf"></div>
+			<div class="col" style="background-color:#AE53FC;" data-color="#AE53FC"></div>
+			<div class="col" style="background-color:#00c1be;" data-color="#00c1be"></div>
+			<div class="col" style="background-color:#729fcf;" data-color="#729fcf"></div>
+			<div class="col" style="background-color:#2251d6;" data-color="#2251d6"></div>
+			<div class="col" style="background-color:#73d216;" data-color="#73d216"></div>
+			<div class="col" style="background-color:#654628;" data-color="#654628"></div>
+			<div class="col" style="background-color:#f57900;" data-color="#f57900"></div>
+			<div class="col" style="background-color:#edd400;" data-color="#edd400"></div>
+		</div>
+	</div>
+</body>
+</html>
